@@ -1,11 +1,9 @@
 package ar.com.tadp.examples.presentacion.jface.simple;
 
-import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Composite;
-import org.eclipse.swt.widgets.MessageBox;
 import org.eclipse.swt.widgets.Text;
+import org.uqbar.ui.jface.builder.FormBuilder;
 
-import ar.com.tadp.examples.jface.base.AbstractPanel;
 import ar.com.tadp.examples.modelo.Monedero;
 import ar.com.tadp.examples.monedero.domain.Cuenta;
 import ar.com.tadp.examples.monedero.exceptions.UserException;
@@ -16,15 +14,15 @@ public class MonederoPanel extends AbstractPanel<Monedero> {
 	}
 
 	@Override
-	protected void describeForm(Composite formPanel) {
+	protected void armarFormulario(Composite formPanel) {
 		this.addText(formPanel, "Monto a ingresar", Monedero.MONTO_A_INGRESAR);
 		Text text = this.addText(this.getModel().getMonedero(), formPanel, "$ actual", Cuenta.SALDO);
 		text.setEditable(false);
 	}
 
 	@Override
-	protected void addActions(Composite actionsPanel) {
-		this.addButton(actionsPanel, "Sacar plata", new UserAction<Monedero>(this) {
+	protected void agregarBotones(Composite actionsPanel) {
+		this.addBoton(actionsPanel, "Sacar plata", new UserAction<Monedero>(this) {
 			@Override
 			protected void execute(Monedero monedero) {
 				try {
@@ -40,7 +38,7 @@ public class MonederoPanel extends AbstractPanel<Monedero> {
 			}
 		});
 
-		this.addButton(actionsPanel, "Poner plata", new UserAction<Monedero>(this) {
+		this.addBoton(actionsPanel, "Poner plata", new UserAction<Monedero>(this) {
 			@Override
 			protected void execute(Monedero monedero) {
 				try {
