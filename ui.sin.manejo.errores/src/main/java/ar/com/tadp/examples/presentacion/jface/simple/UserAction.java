@@ -8,9 +8,6 @@ import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.widgets.MessageBox;
 import org.uqbar.ui.jface.AbstractSelectionListener;
 
-import ar.com.tadp.examples.jface.base.AbstractPanel;
-import ar.com.tadp.examples.monedero.exceptions.UserException;
-
 public abstract class UserAction<T> extends AbstractSelectionListener {
 	private final AbstractPanel<T> container;
 
