@@ -5,6 +5,7 @@ import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Text;
 import org.uqbar.ui.jface.AbstractSelectionListener;
 
+import ar.com.tadp.examples.presentacion.jface.simple.AbstractPanel;
 import ar.edu.design.examples.monedero.domain.Monedero;
 import ar.edu.design.examples.monedero.exceptions.BusinessException;
 import ar.edu.design.examples.monedero.modelo.MonederoModel;
