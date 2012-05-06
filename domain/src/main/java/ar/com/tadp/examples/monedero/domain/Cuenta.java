@@ -2,11 +2,11 @@ package ar.com.tadp.examples.monedero.domain;
 
 import java.math.BigDecimal;
 
-import org.uqbar.commons.model.Observable;
+import org.uqbar.commons.model.ObservableObject;
 
 import ar.com.tadp.examples.monedero.exceptions.UserException;
 
-public class Cuenta extends Observable {
+public class Cuenta extends ObservableObject {
 	public static final String SALDO = "saldo";
 
 	private BigDecimal saldo;

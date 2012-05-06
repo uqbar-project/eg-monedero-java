@@ -2,8 +2,7 @@
 <classpath>
 	<classpathentry kind="src" path="src/main/java"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/util.commons"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/util.jface-contrib"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/monedero.step2.domain"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/monedero-domain-step2"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/arena-deps-linux-64"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
